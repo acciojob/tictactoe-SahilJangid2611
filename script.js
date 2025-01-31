@@ -33,7 +33,7 @@
         messageElement.textContent = "It's a Draw!";
       } else {
         currentPlayer = 1 - currentPlayer;
-        messageElement.textContent = `${players[currentPlayer]}'s turn!`;
+        messageElement.textContent = `${players[currentPlayer]}, you're up`;
       }
     }
 
