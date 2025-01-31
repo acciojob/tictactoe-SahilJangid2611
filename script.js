@@ -2,7 +2,7 @@
     const inputSection = document.querySelector('.input-section');
     const gameSection = document.querySelector('.game-section');
     const boardElement = document.getElementById('board');
-    const messageElement = document.getElementById('message');
+    const messageElement = document.getElementsByClassName('message');
 
     let players = [];
     let currentPlayer = 0;
