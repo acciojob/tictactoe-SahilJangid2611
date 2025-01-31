@@ -1,8 +1,8 @@
- const submitButton = document.getElementById('submit');
+   const submitButton = document.getElementById('submit');
     const inputSection = document.querySelector('.input-section');
     const gameSection = document.querySelector('.game-section');
     const boardElement = document.getElementById('board');
-    const messageElement = document.getElementsByClassName('message');
+    const messageElement = document.getElementById('message');
 
     let players = [];
     let currentPlayer = 0;
@@ -33,7 +33,7 @@
         messageElement.textContent = "It's a Draw!";
       } else {
         currentPlayer = 1 - currentPlayer;
-        messageElement.textContent = `${players[currentPlayer]}, you're up`;
+        messageElement.textContent = `${players[currentPlayer]}'s turn!`;
       }
     }
 
@@ -59,8 +59,9 @@
       inputSection.style.display = 'none';
       gameSection.style.display = 'block';
       createBoard();
-      messageElement.textContent = `${players[currentPlayer]}'s turn!`;
+      messageElement.textContent = `${players[currentPlayer]}, You're up`;
     });
 
     // Show input section by default
     inputSection.style.display = 'block';
+  </script>
